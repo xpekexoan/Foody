@@ -5,6 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import com.example.foody.view.Fragment_history;
+import com.example.foody.view.Fragment_home;
+import com.example.foody.view.Fragment_nofication;
+import com.example.foody.view.Fragment_saved;
+import com.example.foody.view.Fragment_user;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {

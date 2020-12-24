@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@color/colorRedLight"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/left_icon"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back2"/>
+        <TextView
+            android:id="@+id/toobar"
+            android:layout_width="wrap_content"
+            android:text="Mời bạn bè"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

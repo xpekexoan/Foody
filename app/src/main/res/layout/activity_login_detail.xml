@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#41F4F1EE">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#949890">
+
+                <ImageView
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:src="@drawable/avt_to"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:text="Newbee - Top 1000"
+                    android:textColor="#FFFFFC"
+                    android:layout_marginBottom="50dp" />
+            </LinearLayout>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_login_detail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#101010"
+                app:tabSelectedTextColor="#FFF"
+                app:tabIndicatorColor="#2B7DBD"
+                app:tabTextColor="#D3B0B0">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hoạt động" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ảnh $ Video" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/item4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sưu tập" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

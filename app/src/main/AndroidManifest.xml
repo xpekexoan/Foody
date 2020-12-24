@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.foody">
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -8,9 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".view.Sign_up"></activity>
+        <activity android:name=".view.Home_Collection" />
+        <activity android:name=".Dialog.DiaLogItem2Map" />
+        <activity android:name=".view.Login" />
+        <activity android:name=".view.BillActivity" />
+        <activity android:name=".view.VoucherActivity" />
+        <activity android:name=".view.BonusMoneyActivity" />
+        <activity android:name=".view.PayActivity" />
+        <activity android:name=".view.SettingActivity" />
+        <activity android:name=".view.PolicyActivity" />
+        <activity android:name=".view.AddFriendActivity" />
+        <activity android:name=".view.Search_Nofication" />
+        <activity android:name=".view.Setting_Nofication" />
+        <activity android:name=".view.Grid_Item_MoiDay" />
+        <activity android:name=".view.Home_Datcho_Activity" />
+        <activity android:name=".view.KhamPhaFragment" />
+        <activity android:name=".view.AnGiActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -1,11 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nofication Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
-</RelativeLayout>
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff">
+
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimary"
+    android:id="@+id/appbar_id">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/icon_setting"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_baseline_settings" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Thông báo"
+                android:textSize="20sp"
+                android:textColor="#FFFFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/icon_search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_baseline_search"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:id="@+id/tablayout_id"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        android:textAlignment="center"
+        android:textDirection="locale"
+        app:tabTextColor="#0E0E0E"
+        app:tabIndicatorColor="#2B7DBD"
+        app:tabSelectedTextColor="#2B7DBD"
+        android:background="#EDEDEA"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_id">
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

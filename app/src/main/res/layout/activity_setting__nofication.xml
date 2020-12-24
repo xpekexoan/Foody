@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFEFEE">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_back"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Cài đặt thông báo"
+                android:textSize="20sp"
+                android:textColor="#FFFFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Xong"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#EFEFEE">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NHẬN THÔNG BÁO"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="15sp"
+            android:textColor="#91918F" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#757474"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chuong"
+                android:layout_marginLeft="17sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cho phép nhận thông báo"
+            android:textSize="15sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="60sp"
+            android:textColor="#121211"/>
+        <ToggleButton
+            android:id="@+id/toggle"
+            android:layout_width="50dp"
+            android:layout_height="90dp"
+            android:background="@drawable/togglebutton"
+            android:layout_marginLeft="320dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#EFEFEE">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#757474"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cài đặt người dùng"
+            android:layout_marginTop="18dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15sp"
+            android:textColor="#91918F"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#E8E8E1"
+        android:id="@+id/rl1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#757474"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_social"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/social"
+                android:layout_marginLeft="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Xã hội"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="60sp"
+                    android:textSize="15sp"
+                    android:textColor="#121211"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/chuyen1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right"
+                    android:layout_marginLeft="360dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#E8E8E1"
+        android:id="@+id/rl2">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#757474"/>
+        <ImageView
+            android:id="@+id/image_checkin"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/checkin"
+            android:layout_marginLeft="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa điểm đang theo dõi"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:textColor="#121211"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right"
+            android:layout_marginLeft="360dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="#EFEFEE">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#757474"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cài đặt thiết bị"
+            android:textSize="15sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15sp"
+            android:textColor="#91918F"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="#E8E8E1"
+        android:id="@+id/rl3">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#757474"/>
+        <ImageView
+            android:id="@+id/image_dialy"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialy"
+            android:layout_marginLeft="17sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Theo địa lý"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="60sp"
+            android:textSize="15sp"
+            android:textColor="#121211"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right"
+            android:layout_marginLeft="360dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="#EFEFEE">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#757474"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#757474"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Cài đặt mặc định"
+            android:textSize="15sp"
+            android:textColor="#121211"
+            android:layout_marginTop="10sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#757474"/>
+
+</LinearLayout>
+

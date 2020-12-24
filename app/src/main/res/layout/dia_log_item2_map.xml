@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/aaa"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Dialog.DiaLogItem2Map">
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="#7CEAE2E2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center|left"
+                android:textColor="#F03F51B5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hủy bỏ"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#F03F51B5"
+                android:layout_marginRight="15dp"
+                android:gravity="center|right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Xong"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+        <NumberPicker
+            android:layout_marginTop="30dp"
+            android:scaleY="0.7"
+            android:id="@+id/textPicker"
+            android:theme="@style/AppTheme.Picker"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

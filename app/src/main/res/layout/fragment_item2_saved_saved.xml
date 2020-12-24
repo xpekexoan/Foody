@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.Item2Fragment">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="#ededed"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <LinearLayout
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager_saved_it2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_saved_it2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:pointerIcon="context_menu"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabSelectedTextColor="@color/colorRedLight"
+                    >
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/item1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_baseline_location_on_24_gray"/>
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/item2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_baseline_add_photo_alternate_24_gray" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/item4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_baseline_bookmark_24_red" />
+                </com.google.android.material.tabs.TabLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lvSavedItem2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+</LinearLayout>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCC"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#cd2027">
+
+        <ImageView
+            android:id="@+id/btt_back"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/icon_back" />
+
+        <RadioGroup
+            android:id="@+id/group_odau_angi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_background_radiobutton"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_odau"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/radio_odau"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:padding="10dp"
+                android:text="Ở đâu"
+                android:textColor="@drawable/changetext_radio_trangchu" />
+
+            <RadioButton
+                android:id="@+id/rb_angi"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/radio_odau"
+                android:button="@android:color/transparent"
+                android:padding="10dp"
+                android:text="Ăn gì"
+                android:textColor="@drawable/changetext_radio_trangchu" />
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_add"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CCC"
+            android:orientation="vertical">
+            <RadioGroup
+                android:id="@+id/group_tab_radio"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/colorWhite">
+                <RadioButton
+                    android:id="@+id/rb_moinhat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mới nhất"
+                    android:textColor="@drawable/changetext_tag_trangchu"
+                    android:button="@android:color/transparent"
+                    android:textAlignment="center"
+                    android:drawableBottom="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:background="@drawable/changebackground_tab"
+                    android:layout_weight="1"
+                    android:checked="true"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#CCC"/>
+                <RadioButton
+                    android:id="@+id/rb_danhmuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Danh mục"
+                    android:textColor="@drawable/changetext_tag_trangchu"
+                    android:button="@android:color/transparent"
+                    android:textAlignment="center"
+                    android:drawableBottom="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:background="@drawable/changebackground_tab"
+                    android:layout_weight="1"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#CCC"/>
+                <RadioButton
+                    android:id="@+id/rb_khuvuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Khu vực"
+                    android:textColor="@drawable/changetext_tag_trangchu"
+                    android:button="@android:color/transparent"
+                    android:textAlignment="center"
+                    android:drawableBottom="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:background="@drawable/changebackground_tab"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:drawableLeft="@drawable/nearby"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="0dp"
+                    android:text="Gần tôi"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:drawableLeft="@drawable/order"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="0dp"
+                    android:text="Giao hàng"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:drawableLeft="@drawable/blog"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="0dp"
+                    android:text="Blogs"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="0dp"
+                    android:text="Top thành viên"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gần tôi"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:text="Vui lòng bật Dịch Vụ Định Vị để xem các địa điểm lân cận"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:textColor="#4CAF50"
+                        android:background="@drawable/boder_khung"
+                        android:text="Bật dịch vụ định vị"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#77B5B5B1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mới nhất"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000"
+                        android:drawableRight="@drawable/ic_next__mn"
+                        android:drawablePadding="10dp"
+                        android:textSize="17sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lọc"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="170dp"
+                        android:textColor="#000"
+                        android:drawableRight="@drawable/ic_loc"
+                        android:drawablePadding="10dp"
+                        android:textSize="17sp"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#32A3A3A1"/>
+            </LinearLayout>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_saved"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#eee"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                app:tabSelectedTextColor="#2B7DBD"
+                app:tabIndicatorColor="#2B7DBD"
+                app:tabTextColor="#0E0E0E">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ở đâu" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sưu tầm " />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/item3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blogs" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/item4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bình luận" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager_saved"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                </LinearLayout>
+            </androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
